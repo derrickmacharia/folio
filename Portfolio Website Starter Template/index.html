@@ -46,7 +46,10 @@
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
-               
+               <!-- nav close -->
+               <div class="nav-close" id="nav-close">
+                   <i class="lni lni-close"></i>
+               </div>
             </div>
             <!-- nav btn -->
             <div class="nav-btns">
@@ -184,7 +187,7 @@
             </div>
         </section>
         <!--=============== Services ===============-->
-        <section class="service section">
+        <section class="services section">
             <div class="container">
                 <!-- section title -->
                 <h2 class="section-title padd-15">Services</h2>
@@ -345,16 +348,16 @@
                 <div class="row">
                     <div class="portfolio-filter padd-15">
                         <div class="portfolio-filter-inner">
-                            <button type="button" class="active">Everything</button>
-                            <button type="button">Design</button>
-                            <button type="button">Frontend</button> 
-                            <button type="button">Backend</button>
+                            <button type="button" class="active" data-filter="all" >Everything</button>
+                            <button type="button" data-filter="design">Design</button>
+                            <button type="button" data-filter="frontend">Frontend</button> 
+                            <button type="button" data-filter="backend">Backend</button>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row portfolio-items">
                     <!-- portfolio item -->
-                    <div class="portfolio-item padd-15">
+                    <div class="portfolio-item padd-15" data-category="design">
                         <div class="portfolio-item-inner">
                             <div class="portfolio-item-thumbnail">
                                 <img src="assets/img/1.svg" alt="">
@@ -366,7 +369,7 @@
                         </div>
                     </div>
                     <!-- portfolio item -->
-                    <div class="portfolio-item padd-15">
+                    <div class="portfolio-item padd-15" data-category="frontend">
                         <div class="portfolio-item-inner">
                             <div class="portfolio-item-thumbnail">
                                 <img src="assets/img/1.svg" alt="">
@@ -378,7 +381,7 @@
                         </div>
                     </div>
                     <!-- portfolio item -->
-                    <div class="portfolio-item padd-15">
+                    <div class="portfolio-item padd-15" data-category="backend">
                         <div class="portfolio-item-inner">
                             <div class="portfolio-item-thumbnail">
                                 <img src="assets/img/1.svg" alt="">
@@ -390,7 +393,7 @@
                         </div>
                     </div>
                     <!-- portfolio item -->
-                    <div class="portfolio-item padd-15">
+                    <div class="portfolio-item padd-15" data-category="design">
                         <div class="portfolio-item-inner">
                             <div class="portfolio-item-thumbnail">
                                 <img src="assets/img/1.svg" alt="">
@@ -402,7 +405,7 @@
                         </div>
                     </div>
                     <!-- portfolio item -->
-                    <div class="portfolio-item padd-15">
+                    <div class="portfolio-item padd-15" data-category="frontend">
                         <div class="portfolio-item-inner">
                             <div class="portfolio-item-thumbnail">
                                 <img src="assets/img/1.svg" alt="">
@@ -414,7 +417,7 @@
                         </div>
                     </div>
                     <!-- portfolio item -->
-                    <div class="portfolio-item padd-15">
+                    <div class="portfolio-item padd-15" data-category="backend">
                         <div class="portfolio-item-inner">
                             <div class="portfolio-item-thumbnail">
                                 <img src="assets/img/1.svg" alt="">
@@ -429,16 +432,224 @@
             </div>
         </section>
         <!--=============== Testimonial ===============-->
-        
+        <section class="section">
+            <div class="container">
+                <!-- SECTION TITLE -->
+                <h2 class="section-title padd-15">Clients & Reviews</h2>
+                <!-- testimonial wrapper -->
+                <div class="swiper testimonial-wrapper">
+                    <div class="swiper-wrapper">
+                        <!-- testimonial item -->
+                        <div class="testimonial-item swiper-slide">
+                            <div class="thumb">
+                                <img src="assets/img/avatar-3.svg" alt="">
+                            </div>
+                            <h3>John Doe</h3>
+                            <span class="subtitle">Product designer at Dribble</span>
+                            <div class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis facilis id quia ratione.</div>
+                        </div>
+                        <!-- testimonial item -->
+                        <div class="testimonial-item swiper-slide">
+                            <div class="thumb">
+                                <img src="assets/img/avatar-1.svg" alt="">
+                            </div>
+                            <h3>John Doe</h3>
+                            <span class="subtitle">Product designer at Dribble</span>
+                            <div class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis facilis id quia ratione.</div>
+                        </div>
+                        <!-- testimonial item -->
+                        <div class="testimonial-item swiper-slide">
+                            <div class="thumb">
+                                <img src="assets/img/avatar-3.svg" alt="">
+                            </div>
+                            <h3>John Doe</h3>
+                            <span class="subtitle">Product designer at Dribble</span>
+                            <div class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis facilis id quia ratione.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
         <!--=============== Blog ===============-->
-        
+        <section class="section">
+            <div class="container">
+                    <!-- SECTION TITLE -->
+                    <h2 class="section-title padd-15">Latest Posts</h2>
+                <div class="row">
+                    <!-- blog item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="#"><span class="category">Reviews</span></a>
+                                <a href="#"><img src="assets/img/1.svg" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="#">5 Best App Development Tool for Your Projects</a></h3>
+                                <ul class="meta">
+                                    <li>09 February, 2021</li>
+                                    <li>Derrick</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- blog item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="#"><span class="category">Reviews</span></a>
+                                <a href="#"><img src="assets/img/2.svg" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="#">5 Best App Development Tool for Your Projects</a></h3>
+                                <ul class="meta">
+                                    <li>09 February, 2021</li>
+                                    <li>Derrick</li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!-- blog item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="#"><span class="category">Reviews</span></a>
+                                <a href="#"><img src="assets/img/3.svg" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="#">5 Best App Development Tool for Your Projects</a></h3>
+                                <ul class="meta">
+                                    <li>09 February, 2021</li>
+                                    <li>Derrick</li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!--=============== Contact ===============-->
-        
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title padd-15">
+                    Contact Me
+                </h2>
+               <div class="row">
+                    <!-- contact box -->
+                    <div class="contact-box padd-15">
+                        <div class="contact-data">
+                            <!-- contact info -->
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Call for instance support</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-phone contact-icon">
+                                        +254 791 019 005
+                                    </i>
+                                </span>
+                            </div>
+                            <!-- contact info -->
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Write through Email</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-user contact-icon">
+                                        softwaredevderrick@gmail.com
+                                    </i>
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- contact form -->
+                    <form action="" class="contact-form padd-15">
+                        <div class="contact-inputs">
+                            <!-- contact content -->
+                            <div class="contact-content">
+                                <input type="email" class="contact-input">
+                                <label for="" class="contact-label">Email</label>
+                                <span></span>
+                            </div>
+                            <!-- contact content -->
+                            <div class="contact-content">
+                                <input type="email" class="contact-input">
+                                <label for="" class="contact-label">Subject</label>
+                                <span></span>
+                            </div>
+                            <!-- contact content -->
+                            <div class="contact-content contact-area">
+                                <textarea name="" id="" cols="30" rows="10" class="contact-input"></textarea>
+                                <label for="" class="contact-label">Message</label>
+                                <span></span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-default">Send Message</a>
+                    </form>
+               </div>
+            </div>
+        </section>
+
         <!--=============== Footer ===============-->
-        
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-text padd-15">
+                    <p>&copy;Derrick Macharia</p>
+                </div>
+            </div>
+        </footer>
     </main>
     <!--=============== Theme Customize ===============-->
-    
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Custoize your view</h2>
+            <p>Manage your font size, color and background</p>
+            <!-- font size -->
+            <div class="font-size">
+                <h3>Font Size</h3>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1 "></span>
+                        <span class="font-size-2 "></span>
+                        <span class="font-size-3 active"></span>
+                        <span class="font-size-4 "></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+            <!-- color -->
+            <div class="color">
+                <h3>Color</h3>
+                <div class="choose-color">
+                    <span class="color-1"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3 active"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+            <!-- background -->
+            <div class="background">
+                <h3>Background</h3>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Dark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--=============== SWIPER JS ===============-->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
